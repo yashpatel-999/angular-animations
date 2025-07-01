@@ -1,0 +1,7 @@
+<button (click)="toggle()">
+  {{ isOpen ? 'Hide' : 'Show' }} Paragraph
+</button>
+
+<div [@expandCollapse]="isOpen ? 'expanded' : 'collapsed'" class="dropdown-container">
+  <p>This is a dropdown paragraph. It expands and collapses smoothly using Angular animations.</p>
+</div>
